@@ -1,15 +1,27 @@
-ECHO is on.
-# Python
+# Python cache / compiled files
 __pycache__/
 *.py[cod]
-*.sqlite3
+*$py.class
 
-# Environment
+# Virtual environment
 myenv/
-.env
-
-# VS Code
-.vscode/
+env/
+venv/
 
 # Django stuff
+*.log
+*.pot
+*.pyc
 db.sqlite3
+media/
+staticfiles/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment variables
+*.env
+.env.*
