@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1 class="mb-4">Available Polls</h1>
+<div class="list-group">
+    {% for q in latest_questions %}
+        <a href="{% url 'home:detail' q.id %}" class="list-group-item list-group-item-action">
+            {{ q.question_text }}
+        </a>
+    {% empty %}
+        <p class="text-muted">No polls available yet.</p>
+    {% endfor %}
+</div>
+{% endblock %}

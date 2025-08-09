@@ -1,0 +1,15 @@
+ECHO is on.
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Environment
+myenv/
+.env
+
+# VS Code
+.vscode/
+
+# Django stuff
+db.sqlite3
